@@ -1,0 +1,6 @@
+local:
+    root: /var/www/ace-acsf-blt/docroot
+    uri: 'http://lc.ace-acsf-blt'
+    host: lc.ace-acsf-blt
+    user: vagrant
+    ssh: { options: '-o PasswordAuthentication=no -i $HOME/.vagrant.d/insecure_private_key' }
