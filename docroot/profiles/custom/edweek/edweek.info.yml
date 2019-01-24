@@ -1,0 +1,13 @@
+name: 'Phase2/Acquia edweek ACSF profile'
+type: profile
+version: 8.x-dev
+description: 'ACSF profile for edweek demo'
+core: '8.x'
+
+dependencies:
+  - acsf
+themes:
+  - bartik
+  - seven
+
+base profile: lightning
