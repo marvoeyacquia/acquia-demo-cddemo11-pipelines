@@ -9,7 +9,8 @@ project:
     hostname: 'lc.${project.machine_name}'
 git:
   default_branch: master
-  remotes: {  }
+  remotes:
+    acsf: 'acsfdemo7@svn-1402.enterprise-g1.hosting.acquia.com:acsfdemo7.git'
 deploy:
   tag_source: true
 drush:
