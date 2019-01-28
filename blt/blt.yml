@@ -8,9 +8,12 @@ project:
     protocol: http
     hostname: 'lc.${project.machine_name}'
 git:
-  default_branch: master
+  default_branch: ace-acsf-blt
   remotes:
     acsf: 'acsfdemo7@svn-1402.enterprise-g1.hosting.acquia.com:acsfdemo7.git'
+  hooks:
+    pre-commit: false
+    commit-msg: false
 deploy:
   tag_source: true
 drush:
