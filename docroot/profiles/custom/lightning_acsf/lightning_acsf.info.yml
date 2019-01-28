@@ -1,0 +1,14 @@
+name: 'Lightning on ACSF'
+type: profile
+version: 8.x-dev
+description: 'Subprofile of lightning for acsf'
+core: '8.x'
+
+themes:
+  - bartik
+  - seven
+
+dependencies:
+  - acsf
+
+base profile: lightning
