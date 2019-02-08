@@ -31,6 +31,9 @@ ssh_home: /var/www/ace-acsf-blt
 
 # Multisite installations should configure additional domains here.
 apache_vhosts:
+  - servername: "lc.acsfdemo7.ace-acsf-blt"
+    documentroot: "/var/www/ace-acsf-blt/obio_commerce-2019-01-08/docroot"
+    extra_parameters: "{{ apache_vhost_php_fpm_parameters }}"
   # Drupal VM's default domain, evaluating to whatever `vagrant_hostname` is set to (drupalvm.dev by default).
   - servername: "{{ drupal_domain }}"
     serveralias: "www.{{ drupal_domain }}"
@@ -49,6 +52,9 @@ apache_vhosts:
 # It's recommended to prefix database names with 'drupal'. Otherwise,
 # you'll need to add additional users in the 'mysql_users' section.
 mysql_databases:
+  - name: ace_acsf_blt
+    encoding: utf8
+    collation: utf8_general_ci
   - name: drupal
     encoding: utf8
     collation: utf8_general_ci
@@ -60,7 +66,7 @@ mysql_users:
   - name: drupal
     host: "%"
     password: drupal
-    priv: "drupal%.*:ALL"
+    priv: "*.*:ALL"
 
 # Set this to 'false' if you don't need to install drupal (using the drupal_*
 # settings below), but instead copy down a database (e.g., using drush sql-sync).
