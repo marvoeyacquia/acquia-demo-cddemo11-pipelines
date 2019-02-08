@@ -44,6 +44,6 @@ disable-targets:
         sniff:
           all: true
           files: true
-    security:
-      check:
-        updates: true
+      security:
+        check:
+          updates: true
