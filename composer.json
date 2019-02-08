@@ -3,7 +3,7 @@
     "description": "Project template for Drupal 8 sites built with BLT.",
     "type": "project",
     "minimum-stability": "dev",
-    "prefer-stable": true,
+    "prefer-stable": true
     "require": {
         "acquia/acsf-tools": "dev-9.x-dev",
         "acquia/blt": "^9.2.0",
